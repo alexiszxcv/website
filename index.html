@@ -1,29 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>My Personal Website</title>
-</head>
-<body>
-  <header>
-    <h1>My Personal Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <p>Welcome to my personal website!</p>
-  </main>
-  <footer>
-    <p>&copy; 2023 My Personal Website</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Add styles for a responsive design */
+      @media (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+      /* Add styles for the grid layout */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .column {
+        flex: 33.33%;
+        padding: 5px;
+      }
+      /* Add styles for the color scheme */
+      body {
+        background-color: #F1F1F1;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+      h1, h2, h3 {
+        color: #0084C5;
+      }
+      /* Add styles for the typography */
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      /* Add styles for the micro-interactions */
+      button {
+        background-color: #0084C5;
+        color: #fff;
+        padding: 10px 20px;
+        border: 0;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+      button:hover {
+        background-color: #0073A5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <!-- Add the grid layout -->
+      <div class="column">
+        <!-- Add an image -->
+        <img src="https://via.placeholder.com/300x300" alt="Image">
+      </div>
+      <div class="column">
+        <!-- Add a heading -->
+        <h1>Welcome to my website</h1>
+        <!-- Add some text -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in enim vel nisl malesuada commodo. Duis in bibendum ante. Integer euismod velit vel lorem congue placerat.</p>
+        <!-- Add a button -->
+        <button>Learn more</button>
+      </div>
+    </div>
+  </body>
 </html>
-git config --global user.email "alexismusaelyan@gmail.com"
