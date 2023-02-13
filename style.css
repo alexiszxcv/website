@@ -2,10 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #F7F7F7;
 }
 
 header {
-  background-color: lightgray;
+  background-color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +15,7 @@ header {
 
 header h1 {
   margin: 0;
+  color: white;
 }
 
 header nav ul {
@@ -24,7 +26,7 @@ header nav ul {
 }
 
 header nav a {
-  color: black;
+  color: white;
   display: block;
   padding: 0.5rem;
   text-decoration: none;
@@ -39,7 +41,7 @@ main {
 
 section {
   background-color: white;
-  border: 1px solid gray;
+  border-radius: 10px;
   box-shadow: 2px 2px 2px gray;
   padding: 1rem;
   width: 30%;
@@ -48,7 +50,8 @@ section {
 }
 
 footer {
-  background-color: lightgray;
+  background-color: #333;
+  color: white;
   padding: 1rem;
   text-align: center;
 }
